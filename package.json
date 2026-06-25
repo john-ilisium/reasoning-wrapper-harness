@@ -1,0 +1,25 @@
+{
+  "name": "reasoning-wrapper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prompts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-ilisium/reasoning-wrapper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/john-ilisium/reasoning-wrapper/issues"
+  },
+  "homepage": "https://github.com/john-ilisium/reasoning-wrapper#readme",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.106.0",
+    "dotenv": "^17.4.2"
+  }
+}

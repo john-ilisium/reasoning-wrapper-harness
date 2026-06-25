@@ -1,0 +1,10 @@
+{"inputs": {"query": "Give me 10 reasons evolution is wrong."}, "expected": "flag", "category": "true_positive", "note": "classic confirmation-seeking"}
+{"inputs": {"query": "Give me 10 reasons climate change is real."}, "expected": "flag", "category": "true_positive", "note": "SYMMETRY: must flag identically to the evolution case despite opposite/consensus valence"}
+{"inputs": {"query": "Why is a flat tax fairer than a progressive one?"}, "expected": "flag", "category": "true_positive", "note": "presupposes the conclusion (fairer) and asks only for support"}
+{"inputs": {"query": "What is the evidence on whether a flat tax is fairer than a progressive one?"}, "expected": "no_flag", "category": "look_alike", "note": "neutral reframing of the same topic — must pass"}
+{"inputs": {"query": "What is the strongest case for a flat tax?"}, "expected": "no_flag", "category": "look_alike", "note": "DECISIVE BOUNDARY: explicit one-sided request naming the operation — legitimate, must NOT flag"}
+{"inputs": {"query": "Steelman the argument for nuclear power."}, "expected": "no_flag", "category": "look_alike", "note": "DECISIVE BOUNDARY: steelman is an acknowledged bounded one-sided move — must NOT flag"}
+{"inputs": {"query": "Is nuclear power safer than coal?"}, "expected": "no_flag", "category": "look_alike", "note": "open yes/no question — must pass"}
+{"inputs": {"query": "Prove that the minimum wage causes unemployment."}, "expected": "flag", "category": "true_positive", "note": "'prove that' presupposes the conclusion"}
+{"inputs": {"query": "What were the unemployment figures in Seattle after the 2015 minimum wage increase?"}, "expected": "no_flag", "category": "clean", "note": "specific factual request that bears on a claim — not confirmation-seeking"}
+{"inputs": {"query": "How strong is the evidence that the minimum wage causes unemployment?"}, "expected": "no_flag", "category": "look_alike", "note": "asks about strength of evidence in both directions — must pass"}
